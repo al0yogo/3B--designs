@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Bdesigns</title>
+    <link rel="stylesheet" href="website2.css">
+</head>
+<body>
+    <p id = 'email'>Contact me @enyebotha@icloud.com</p>
+    <div id = 'divTitle'>
+        <h1 id = 'title' >3</h1>
+        <h1 id = 'title' >B</h1>
+        <h1 id = 'title' >d</h1>
+        <h1 id = 'title' >e</h1>
+        <h1 id = 'title' >s</h1>
+        <h1 id = 'title' >i</h1>
+        <h1 id = 'title' >g</h1>
+        <h1 id = 'title' >n</h1>
+    </div>
+    <img id = 'image' name = 'slide' width = '800' height = '500'>
+    <script>
+        var i = 0;
+
+        var images = [];
+
+        var time = 3000;
+
+        //image list
+
+        images[0] = 'https://lwlies.com/wp-content/uploads/2018/03/my-neighbour-totoro.jpg';
+        images[1] = 'https://i0.wp.com/thespool.net/wp-content/uploads/2019/04/totoro.0.jpg?fit=1024%2C683&ssl=1';
+        images[2] = 'https://images-na.ssl-images-amazon.com/images/I/71pOwfgGotL._AC_SL1500_.jpg';
+
+        // function change the slides
+
+        function changeImg(){
+            document.slide.src = images[i]
+
+            if(i < images.length - 1){
+                i++;
+            } else{
+                i = 0;
+            }
+
+            setTimeout('changeImg()', time)
+        }
+
+        window.onload = changeImg;
+
+    </script>
+  
+    <div class = 'tab'>
+        <button id = 'button1' class = 'tabLinks' onclick = "openTab(event,'firstTab')">Tools</button>
+        <button id = 'button2' class = 'tabLinks' onclick = "openTab(event, 'secondTab')">The Second Tab</button>
+    </div>
+    <div id = 'firstTab' class = 'tabcontent'>
+        <p>Ressources</p>
+        <img id = 'printerImage' src = https://images-na.ssl-images-amazon.com/images/I/41cvANo4ykL._SX342_.jpg>
+        <p>Creality Ender 3 Printer</p>
+        <img id = 'printerImage' src = https://cdn.shopify.com/s/files/1/0202/1942/products/dm-black_794bf3ec-fbab-413a-80ea-6dd0578ed62d_1024x1024.jpeg?v=1478871003>
+        <p>Pla, black filament</p>
+        <img id = 'printerImage' src = https://images-na.ssl-images-amazon.com/images/I/81SzoTgq0sL._AC_SL1500_.jpg>
+        <p>Pla, White filament</p>
+    </div>
+    <div id = 'secondTab' class = 'tabcontent'>
+        <p>hello world</p>
+    </div>
+
+
+
+    <div id = 'textarea'>  
+        <p>I design and print custom creations :) My rate for printing is $5 per hour and my rate for designing is $10 per hour.</p>
+        <p>We are opperating out of Vancouver, BC and will ship to anywhere in Canada</p>
+        <p>Shipping fees may apply depending on your province</p>
+    </div>
+    <img id = 'botttle' src= 'https://lh3.googleusercontent.com/iqjaKyAVr3VsFFYPPGp8FKA99Bwuh2vIlDDxBB-YG9THVVaQxXlku1h9yvAtAbtE7hCRxJhyateWrdFHLQXACTTaXexMuL3Mye43WaQ9s8I3wPkUH3QdSkTV286AOgwwBXeX0YafVw=w2400'>
+    <img id = 'bottle' src = 'https://lh3.googleusercontent.com/3r5XE-dAxwysdzf1GT5ek2xcpg56lwCM8Qf4PlQ371Ik8lkWvMQTueYo5IdguMuOywgh8QX9wsMSetRCur0x-skLzkhFxUwenUeYl0bsuDV3Munppvy6og39I7osDVIt6BmTJVUDfg=w2400'>
+
+    </script>
+<script src="website2.js"></script>
+<noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
